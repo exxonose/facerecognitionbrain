@@ -17,10 +17,11 @@
   },
 
   "engines": {
-    "node":"18.x"
+    "node":"16.13.1",
+    "npm": "8.x"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
