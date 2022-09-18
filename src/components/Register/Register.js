@@ -8,8 +8,7 @@ class Register extends React.Component {
      email: '',
      password: ''
     }
-   
-     }
+      }
 
      onNameChange = (event) => {
       this.setState({name: event.target.value})
