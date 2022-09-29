@@ -7,8 +7,10 @@
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "clarifai": "^2.9.1",
+    "particles-bg": "^2.5.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-parallax-tilt": "^1.7.67",
     "react-scripts": "4.0.2",
     "react-tilt": "^0.1.4",
     "react-tsparticles": "^1.39.0",
@@ -19,15 +21,12 @@
     "node": "16.13.2",
     "npm": "8.1.2"
   },
-
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "heroku-postbuild": "npm run build"
-
-
   },
   "eslintConfig": {
     "extends": [
