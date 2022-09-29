@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import Particles from 'react-tsparticles';
+import ParticlesBg from 'particles-bg'
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import Navigation from './components/Navigation/Navigation';
 import SignIn from './components/SignIn/SignIn';
@@ -9,46 +9,46 @@ import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import Rank from './components/Rank/Rank';
 import './App.css';
 
-const particlesOptions = {
-    particles: {
-      links: {
-        color: "#ffffff",
-        distance: 150,
-        enable: true,
-        opacity: 0.5,
-        width: 1,
-      },
+// const particlesOptions = {
+//     particles: {
+//       links: {
+//         color: "#ffffff",
+//         distance: 150,
+//         enable: true,
+//         opacity: 0.5,
+//         width: 1,
+//       },
      
-      move: {
-        direction: "none",
-        enable: true,
-        outMode: "bounce",
-        random: false,
-        speed: 6,
-        straight: false,
-      },
-      number: {
-        density: {
-          enable: true,
-          value_area: 800,
-        },
-        value: 80,
-      }, collisions: {
-        enable: true,
-      },
+//       move: {
+//         direction: "none",
+//         enable: true,
+//         outMode: "bounce",
+//         random: false,
+//         speed: 6,
+//         straight: false,
+//       },
+//       number: {
+//         density: {
+//           enable: true,
+//           value_area: 800,
+//         },
+//         value: 80,
+//       }, collisions: {
+//         enable: true,
+//       },
      
      
-    },
-    detectRetina: true,
-  }
+//     },
+//     detectRetina: true,
+//   }
 
-  const particlesInit = (main) => {
+//   const particlesInit = (main) => {
 
-    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-  };
+//     // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
+//   };
 
-  const particlesLoaded = (container) => {
-  }; 
+//   const particlesLoaded = (container) => {
+//   }; 
 
   const initialState = {
     input: '',
@@ -146,12 +146,8 @@ const particlesOptions = {
       const {isSignedIn, imageUrl, route, box} = this.state;
       return (
         <div className="App">
-            <Particles className="particles"
-            
-            init={particlesInit}
-            loaded={particlesLoaded} 
-        options={particlesOptions}
-         />
+          <ParticlesBg type="tadpole" bg={true} />
+
           <Navigation isSignedIn = {isSignedIn} onRouteChange = {this.onRouteChange} />
           {route === 'home'
           ? <div><Logo />
